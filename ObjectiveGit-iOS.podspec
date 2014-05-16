@@ -6,13 +6,11 @@
 #
 Pod::Spec.new do |s|
   s.name             = "ObjectiveGit-iOS"
-  s.version          = "0.1.0"
-  s.summary          = "A short description of ObjectiveGit-iOS."
+  s.version          = "0.0.1"
+  s.summary          = "ObjectiveGit modified for use on iOS"
   s.description      = <<-DESC
-                       An optional longer description of ObjectiveGit-iOS
+                       ObjectiveGit modified for use on iOS
 
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
                        DESC
   s.homepage         = "http://EXAMPLE/NAME"
   s.screenshots      = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
@@ -21,8 +19,8 @@ Pod::Spec.new do |s|
   s.source           = { :git => "http://EXAMPLE/NAME.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/EXAMPLE'
 
-  # s.platform     = :ios, '5.0'
-  # s.ios.deployment_target = '5.0'
+  s.platform     = :ios, '7.0'
+  s.ios.deployment_target = '7.0'
   # s.osx.deployment_target = '10.7'
   s.requires_arc = true
 
