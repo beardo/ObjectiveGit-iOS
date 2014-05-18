@@ -16,7 +16,8 @@ Pod::Spec.new do |s|
   s.screenshots      = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Daniel Sullivan" => "code+git@danielsullivan.me" }
-  s.source           = { :git => "http://EXAMPLE/NAME.git", :tag => s.version.to_s }
+  #s.source           = { :git => "https://github.com/beardo/ObjectiveGit-iOS.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/beardo/ObjectiveGit-iOS.git" }
   s.social_media_url = 'https://twitter.com/EXAMPLE'
 
   s.platform     = :ios, '7.0'
@@ -32,5 +33,5 @@ Pod::Spec.new do |s|
   # s.public_header_files = 'Classes/**/*.h'
   # s.frameworks = 'SomeFramework', 'AnotherFramework'
   # s.dependency 'JSONKit', '~> 1.4'
-  s.dependency 'libgit2-iOS', '~> 1.4'
+  s.dependency 'libgit2-iOS', git: 'https://github.com/beardo/libgit2-iOS'
 end
