@@ -33,5 +33,5 @@ Pod::Spec.new do |s|
   # s.public_header_files = 'Classes/**/*.h'
   # s.frameworks = 'SomeFramework', 'AnotherFramework'
   # s.dependency 'JSONKit', '~> 1.4'
-  s.dependency 'libgit2-iOS', git: 'https://github.com/beardo/libgit2-iOS'
+  s.dependency 'libgit2-iOS'
 end
