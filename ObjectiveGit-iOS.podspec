@@ -17,23 +17,16 @@ Pod::Spec.new do |s|
   s.license          = 'MIT'
   s.author           = { "Daniel Sullivan" => "code+git@danielsullivan.me" }
   #s.source           = { :git => "https://github.com/beardo/ObjectiveGit-iOS.git", :tag => s.version.to_s }
-  s.source           = { :git => "https://github.com/beardo/ObjectiveGit-iOS.git" }
+  s.source           = { :git => "https://github.com/beardo/ObjectiveGit-iOS.git", tag: s.version.to_s }
   s.social_media_url = 'https://twitter.com/EXAMPLE'
 
   s.platform     = :ios, '7.0'
   s.ios.deployment_target = '7.0'
-  # s.osx.deployment_target = '10.7'
   s.requires_arc = true
 
-  s.source_files = 'Classes'
-  s.resources = 'Assets/*.png'
-
-  #s.vendored_libraries = 'libgit2.dylib'
-  #s.libraries = 'z'
-  s.ios.exclude_files = 'Classes/osx'
-  s.osx.exclude_files = 'Classes/ios'
+  s.source_files = 'Classes/**/*'
+  #s.ios.exclude_files = 'Classes/osx'
+  #s.osx.exclude_files = 'Classes/ios'
   s.public_header_files = 'Classes/**/*.h'
-  # s.frameworks = 'SomeFramework', 'AnotherFramework'
-  # s.dependency 'JSONKit', '~> 1.4'
   #s.dependency 'libgit2-iOS'
 end
