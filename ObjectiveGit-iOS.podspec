@@ -24,6 +24,10 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '7.0'
   s.requires_arc = true
 
+  s.prepare_command = <<-CMD
+                        find Classes/ios/ -iname \*.m -exec sed -i '' 's/<ObjectiveGit\\/\\(.*\\)>/"\\1"/g' {} \\;
+                      CMD
+
   s.source_files = 'Classes/**/*'
   #s.ios.exclude_files = 'Classes/osx'
   #s.osx.exclude_files = 'Classes/ios'
