@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
 
   s.prepare_command = <<-CMD
                         find Classes/ios/ -exec sed -i '' 's/<ObjectiveGit\\/\\(.*\\)>/"\\1"/g' {} \\;
-                        find Classes/ios/ -exec sed -i '' 's/GTLog/\/\/GTLog/g' {} \\;
+                        find Classes/ios/ -exec sed -i '' 's/GTLog/\\/\\/GTLog/g' {} \\;
                       CMD
 
   s.source_files = 'Classes/**/*'
