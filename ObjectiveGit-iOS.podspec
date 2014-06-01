@@ -12,20 +12,21 @@ Pod::Spec.new do |s|
                        ObjectiveGit modified for use on iOS
 
                        DESC
-  s.homepage         = "http://EXAMPLE/NAME"
-  s.screenshots      = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.homepage         = "https://github.com/beardo/ObjectiveGit-iOS.git"
+  #s.screenshots      = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Daniel Sullivan" => "code+git@danielsullivan.me" }
   #s.source           = { :git => "https://github.com/beardo/ObjectiveGit-iOS.git", :tag => s.version.to_s }
   s.source           = { :git => "https://github.com/beardo/ObjectiveGit-iOS.git", tag: s.version.to_s }
-  s.social_media_url = 'https://twitter.com/EXAMPLE'
+  #s.social_media_url = 'https://twitter.com/EXAMPLE'
 
   s.platform     = :ios, '7.0'
   s.ios.deployment_target = '7.0'
   s.requires_arc = true
+  s.dependency 'libextobjc'
 
   s.prepare_command = <<-CMD
-                        find Classes/ios/ -iname \*.m -exec sed -i '' 's/<ObjectiveGit\\/\\(.*\\)>/"\\1"/g' {} \\;
+                        find Classes/ios/ -exec sed -i '' 's/<ObjectiveGit\\/\\(.*\\)>/"\\1"/g' {} \\;
                       CMD
 
   s.source_files = 'Classes/**/*'
